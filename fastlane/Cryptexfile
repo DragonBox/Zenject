@@ -1,0 +1,1 @@
+git_url ENV["BUILD_FASTLANE_CRYPTEX_GIT_URL"] || "git@bitbucket.org:WeWantToKnow/fastlane_cryptex.git"

@@ -1,0 +1,11 @@
+app_identifier ENV['BUILD_BUNDLE_ID']
+apple_id ENV["BUILD_FASTLANE_APPLE_ID"] || "fastlane@wewanttoknow.com" # Your Apple email address
+
+# You can uncomment any of the lines below and add your own
+# team selection in case you're in multiple teams
+team_name ENV["BUILD_FASTLANE_TEAM_NAME"] || "WeWantToKnow AS"
+team_id ENV["BUILD_FASTLANE_TEAM_ID"] || "8A8X3EQXS7"
+
+itc_team_name ENV["BUILD_FASTLANE_ITC_TEAM_NAME"] || "WeWantToKnow AS"
+# you can even provide different app identifiers, Apple IDs and team names per lane:
+# https://github.com/KrauseFx/fastlane/blob/master/docs/Appfile.md

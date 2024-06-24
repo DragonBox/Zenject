@@ -1,0 +1,11 @@
+import_from_git(url: "git@bitbucket.org:WeWantToKnow/fastlane_setup.git")
+
+desc "The different lanes for your project"
+lane :generate_jenkins_configs do
+  UI.message "Generating your jenkins project configurations"
+  do_generate_jenkins_config(product: :Store, platform: :unity_package, lanes: [:Artifact, :GithubRepository])
+
+  [:android, :ios].each do |platform|
+    do_generate_jenkins_config(product: :Store, platform: platform, lanes: [:Hockey])
+  end
+end
